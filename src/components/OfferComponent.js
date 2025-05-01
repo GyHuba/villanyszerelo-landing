@@ -43,7 +43,7 @@ function OfferComponent() {
       <h2>Kérjen árajánlatot!</h2>
       {submissionStatus === 'success' && (
         <div className="success-message">
-          Köszönjük a megkeresését! Hamarosan felvesszem Önnel a kapcsolatot.
+          Köszönöm a megkeresését! Hamarosan felvesszem Önnel a kapcsolatot.
         </div>
       )}
       {submissionStatus === 'error' && (
