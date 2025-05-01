@@ -9,9 +9,9 @@ function OfferComponent() {
   const [message, setMessage] = useState('');
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
-  const serviceId = 'service_pud1xtp'; 
-  const templateId = 'template_kvgnful'; 
-  const publicKey = 'am6u9RjYApKSfLcTR'; 
+  const serviceId = 'service_drjykgo'; 
+  const templateId = 'template_v07xm6q'; 
+  const publicKey = 'hR2Huovv3lCwYPkNV'; 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
