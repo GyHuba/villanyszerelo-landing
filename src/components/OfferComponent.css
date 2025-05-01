@@ -1,0 +1,78 @@
+.offer-container {
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Világos háttér a szekciónak */
+    text-align: center;
+  }
+  
+  .offer-container h2 {
+    color: #556B2F; /* A fő zöld szín a címnek */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .offer-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Fontos a padding és border kezeléséhez */
+  }
+  
+  .form-group textarea {
+    resize: vertical; /* Csak függőlegesen lehessen átméretezni */
+  }
+  
+  .offer-form button[type="submit"] {
+    background-color: #556B2F; /* A fő zöld szín a gombnak */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hogy a gomb kitöltse a form szélességét */
+  }
+  
+  .offer-form button[type="submit"]:hover {
+    background-color: #6B8E23; /* Világosabb zöld hover */
+  }
+  
+  .offer-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .success-message {
+    color: green;
+    background-color: #e6ffe6;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #b3ffb3;
+  }

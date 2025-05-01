@@ -1,0 +1,78 @@
+.footer {
+    background-color: #f8f8f8; /* Világos háttérszín */
+    color: #333; /* Sötét szövegszín */
+    padding: 10px 20px; /* Kis padding felül és alul, oldalt */
+    text-align: center;
+    font-size: 0.8em; /* Kisebb betűméret */
+    border-top: 1px solid #eee; /* Vékony vonal a tetején elválasztásként */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Igazodik a fő tartalom szélességéhez */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Középre igazítja a tartalmat */
+    align-items: center; /* Függőlegesen is középre */
+    flex-wrap: wrap; /* Hogy a linkek elférjenek kisebb képernyőn */
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 20px; /* Kis margó a bal oldalon */
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .footer-links li a {
+    color: #556B2F; /* A navbar színéhez hasonló link szín */
+    text-decoration: none;
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin-left: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  /* Mobil nézetben a tartalom egymás alá kerülhet */
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .footer-links li {
+      margin: 0 10px;
+    }
+  
+    .social-icons {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }

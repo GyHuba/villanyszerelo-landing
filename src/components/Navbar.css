@@ -1,0 +1,160 @@
+nav {
+    background-color: #556B2F; /* A hero section gombjának színe */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Függőlegesen középre igazítás */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.hidden {
+    transform: translateY(-100%);
+}
+
+nav.visible {
+    transform: translateY(0);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Függőlegesen középre igazítás */
+}
+
+nav ul li {
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+nav ul li button:hover {
+    color: #FAF0E6;
+}
+
+.logo {
+    height: 40px; /* Állítsd be a kívánt fix magasságot (kísérletezz!) */
+    margin-right: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.show {
+    transform: translateX(0);
+}
+
+/* Mobil nézet */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px; /* Ezt már korábban csökkentettük, de ellenőrizzük */
+        justify-content: space-between; /* Fontos, hogy a logó és a hamburger között legyen tér */
+    }
+
+    .logo {
+        top: 10px;
+        left: 15px;
+        max-height: calc(100% - 20px);
+        margin-right: auto; /* A logót balra tolja */
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute; /* Abszolút pozicionálás a navbaron belül */
+        top: 50%; /* Függőlegesen középre */
+        right: 45px; /* Igazítás a navbar jobb oldali paddingjához */
+        transform: translateY(-50%); /* Pontos függőleges középre igazítás */
+        cursor: pointer;
+        z-index: 2; /* Hogy a menü fölött legyen */
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0; /* Tér a vonalak között */
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px; /* A navbar magassága alá */
+        left: 0;
+        background-color: #556B2F;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        box-sizing: border-box;
+        z-index: 10;
+        transform: translateX(-100%);
+    }
+
+    nav.open ul {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        font-size: 1rem;
+        color: white;
+    }
+
+    nav.open .menu-toggle .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    nav.open .menu-toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    nav.open .menu-toggle .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+}
