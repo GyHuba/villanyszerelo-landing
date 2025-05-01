@@ -5,7 +5,7 @@ import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg
 
 function ContactComponent() {
   const phoneNumber = '+36 70 329 6104';
-  const emailAddress = 'info@villanyaszhuba.hu';
+  const emailAddress = 'huba.villany@gmail.com';
 
   return (
     <div className="contact-container">

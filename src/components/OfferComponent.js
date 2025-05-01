@@ -9,7 +9,7 @@ function OfferComponent() {
   const [message, setMessage] = useState('');
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
-  const serviceId = 'service_au5ksmv'; 
+  const serviceId = 'service_pud1xtp'; 
   const templateId = 'template_kvgnful'; 
   const publicKey = 'am6u9RjYApKSfLcTR'; 
 
