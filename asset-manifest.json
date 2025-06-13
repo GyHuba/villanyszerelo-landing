@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/villanyszerelo-landing/static/css/main.5330ec38.css",
-    "main.js": "/villanyszerelo-landing/static/js/main.a1186d8a.js",
-    "static/js/453.320c85a4.chunk.js": "/villanyszerelo-landing/static/js/453.320c85a4.chunk.js",
-    "static/media/hero-background.jpg": "/villanyszerelo-landing/static/media/hero-background.c71ebe2fd98ae7925774.jpg",
-    "static/media/logo.png": "/villanyszerelo-landing/static/media/logo.1dd29583fef63ae06b5a.png",
-    "index.html": "/villanyszerelo-landing/index.html",
-    "main.5330ec38.css.map": "/villanyszerelo-landing/static/css/main.5330ec38.css.map",
-    "main.a1186d8a.js.map": "/villanyszerelo-landing/static/js/main.a1186d8a.js.map",
-    "453.320c85a4.chunk.js.map": "/villanyszerelo-landing/static/js/453.320c85a4.chunk.js.map"
+    "main.css": "/static/css/main.2148bc7b.css",
+    "main.js": "/static/js/main.4d1a9dcb.js",
+    "static/js/453.320c85a4.chunk.js": "/static/js/453.320c85a4.chunk.js",
+    "static/media/hero-background.jpg": "/static/media/hero-background.c71ebe2fd98ae7925774.jpg",
+    "static/media/logo.png": "/static/media/logo.1dd29583fef63ae06b5a.png",
+    "index.html": "/index.html",
+    "main.2148bc7b.css.map": "/static/css/main.2148bc7b.css.map",
+    "main.4d1a9dcb.js.map": "/static/js/main.4d1a9dcb.js.map",
+    "453.320c85a4.chunk.js.map": "/static/js/453.320c85a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5330ec38.css",
-    "static/js/main.a1186d8a.js"
+    "static/css/main.2148bc7b.css",
+    "static/js/main.4d1a9dcb.js"
   ]
 }
