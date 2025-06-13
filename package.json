@@ -2,7 +2,7 @@
   "name": "villanyszerelo-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://GyHuba.github.io/villanyszerelo-landing",
+  "homepage": "https://www.hubavill.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
