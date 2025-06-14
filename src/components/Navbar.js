@@ -39,6 +39,7 @@ function Navbar({ scrollToSection }) {
       </div>
       <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
         <li><button onClick={() => { scrollToSection('home'); setIsOpen(false); }}>Kezdőlap</button></li>
+        <li><button onClick={() => { scrollToSection('about-me'); setIsOpen(false); }}>Rólam</button></li>
         <li><button onClick={() => { scrollToSection('services'); setIsOpen(false); }}>Szolgáltatások</button></li>
         <li><button onClick={() => { scrollToSection('offer'); setIsOpen(false); }}>Ajánlat kérés</button></li>
         <li><button onClick={() => { scrollToSection('contact'); setIsOpen(false); }}>Kapcsolat</button></li>

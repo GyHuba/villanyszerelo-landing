@@ -1,0 +1,76 @@
+/* src/components/AboutMe.css */
+
+.about-me-section {
+  padding: 40px 20px; /* Belső margó */
+  text-align: center; /* Cím középre igazítása */
+  background-color: #f8f8f8; /* VILÁGOS SZÜRKE HÁTTÉR */
+  color: #333; /* Szöveg színe */
+}
+
+.about-me-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #6B8E23; /* FÖLDES ZÖLD CÍM SZÍN */
+}
+
+.about-me-content {
+  display: flex; /* Flexbox használata az elrendezéshez */;
+  flex-direction: column; /* Mobil nézetben oszlopba rendezés alapértelmezetten */
+  align-items: center; /* Középre igazítás */
+  max-width: 1000px; /* Maximális szélesség a tartalomnak */
+  margin: 0 auto; /* Középre igazítás */
+  gap: 30px; /* Térköz az elemek között */
+}
+
+.about-me-image-container {
+  flex-shrink: 0; /* Ne zsugorodjon össze a kép konténer */
+  width: 250px; /* Kép konténer szélessége */
+  height: 250px; /* Kép konténer magassága */
+  border-radius: 50%; /* Kör alakú konténer, a PNG-t is körbevágja vizuálisan */
+  overflow: hidden; /* A kép szélei ne lógjanak ki a körből */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Kicsit erősebb árnyék */
+  border: 4px solid #6B8E23; /* Kép körüli szegély az új zöld színnel */
+}
+
+.about-me-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* A kép kitölti a konténert, arányait megtartva */
+  display: block; /* Eltávolítja az extra helyet a kép alatt */
+  /* Ha a PNG már maga is körülvágott/átlátszó háttérrel rendelkezik, akkor is ez a beállítás biztosítja, hogy pontosan kitölti a kör alakú konténert. */
+}
+
+.about-me-text {
+  flex-grow: 1; /* A szöveg kitölti a maradék helyet */
+  text-align: left; /* Szöveg balra igazítása */
+  line-height: 1.6;
+  font-size: 1em;
+  color: #555; /* Kissé sötétebb szürke szöveg a jobb olvashatóságért */
+}
+
+.about-me-text p {
+  margin-bottom: 15px; /* Bekezdések közötti térköz */
+}
+
+/* Asztali nézet média lekérdezés (pl. 768px felett) */
+@media (min-width: 768px) {
+  .about-me-content {
+    flex-direction: row; /* Asztali nézetben egymás mellé rendezés */
+    text-align: left; /* Szöveg igazítása balra */
+  }
+
+  .about-me-image-container {
+    margin-right: 30px; /* Térköz a kép és a szöveg között */
+    margin-bottom: 0; /* Alapértelmezett margin eltávolítása mobilról */
+  }
+}
+
+/* Nagyobb asztali nézetekhez */
+@media (min-width: 1024px) {
+  .about-me-section {
+    padding: 60px 40px;
+  }
+  .about-me-section h2 {
+    font-size: 3em;
+  }
+}

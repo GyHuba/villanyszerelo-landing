@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import HomeComponent from './components/HeroSectionComponent';
+import AboutMeComponent from './components/AboutMeComponent';
 import ServicesComponent from './components/ServicesComponent';
 import OfferComponent from './components/OfferComponent';
 import ContactComponent from './components/ContactComponent';
 import FooterComponent from './components/FooterComponent';
-import './App.css'; // Ha vannak globális stílusaid
+import './App.css'; 
 
 function App() {
   const scrollToSection = (id) => {
@@ -17,10 +18,13 @@ function App() {
 
   return (
     <div className="app-container">
-      <Navbar scrollToSection={scrollToSection} /> {/* Átadjuk a scrollToSection függvényt propként */}
+      <Navbar scrollToSection={scrollToSection} />
       <main>
         <section id="home">
           <HomeComponent />
+        </section>
+        <section id="about-me">
+          <AboutMeComponent />
         </section>
         <section id="services">
           <ServicesComponent />
